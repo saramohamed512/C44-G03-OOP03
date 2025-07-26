@@ -45,6 +45,27 @@
             //    Console.WriteLine("----------------------------");
             //}
             #endregion
+            #region problem5
+              
+            //List<Book> library = new List<Book>();
+
+            //library.Add(new EBook("C# Programming", "John Sharp", "978-1234567890", 5.2, "PDF"));
+            //library.Add(new PrintedBook("Clean Code", "Robert Martin", "978-0132350884", 464, "Hardcover"));
+            //library.Add(new EBook("Design Patterns", "Erich Gamma", "978-0201633610", 3.8, "EPUB"));
+            //library.Add(new PrintedBook("The Pragmatic Programmer", "Andrew Hunt", "978-0201616224", 352, "Paperback"));
+
+     
+            //Console.WriteLine("Library Catalog:");
+            //Console.WriteLine("--------------------------------------------------");
+
+            //foreach (var book in library)
+            //{
+            //    Console.WriteLine(book);
+            //    Console.WriteLine("----------------------------");
+            //}
+
+         
+            #endregion
 
 
         }
