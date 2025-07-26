@@ -13,6 +13,22 @@
             //Car c3 = new Car(3);
             //Console.WriteLine(c3);
             #endregion
+            #region Inheritance
+            //Parent p1 = new Parent(10, 20);
+            //p1.X = 100;
+            //p1.Y = 200;
+            //Console.WriteLine(p1);
+            //Console.WriteLine($"Multiply: {p1.Multiply()}");
+            //p1.MyFunc();
+
+            Child child = new Child(10, 20, 30);
+            child.X = 100;
+            child.Y = 200;
+            child.Z = 300;
+            Console.WriteLine(child);
+            Console.WriteLine($"Multiply: {child.Multiply()}");
+            child.MyFunc();
+            #endregion
         }
     }
 }
