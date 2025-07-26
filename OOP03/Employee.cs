@@ -9,13 +9,22 @@ namespace OOP03
 {
     internal class Employee
     {
+        #region Attributes
+        private char _gender;
+        private HiringDate _hireDate;
+        #endregion
         #region properties
         public int Id { get; set; }
         public string Name { get; set; }
         public SecurityLevel SecurityLevel { get; set; }
         public decimal Salary { get; set; }
-        public DateTime HireDate { get; set; }
-        private char _gender;
+        public HiringDate HireDate
+        {
+            get { return _hireDate; }
+            set { _hireDate = value; }
+        }
+
+
         public char Gender
         {
             get { return _gender; }
@@ -33,7 +42,7 @@ namespace OOP03
         }
         #endregion
         #region constructor
-        public Employee(int id, string name, SecurityLevel securityLevel, decimal salary, DateTime hireDate, char _gender)
+        public Employee(int id, string name, SecurityLevel securityLevel, decimal salary, HiringDate hireDate, char _gender)
         {
             Id = id;
             Name = name;
@@ -47,10 +56,10 @@ namespace OOP03
         public override string ToString()
         {
             return string.Format(
-                "Employee ID: {0}\nName: {1}\nSecurity Level: {2}\nSalary: {3:C}\nHire Date: {4:yyyy-MM-dd}\nGender: {5}",
-                Id, Name, SecurityLevel, Salary, HireDate, Gender);
+                "Employee ID: {0}\nName: {1}\nSecurity Level: {2}\nSalary: {3:C}\nHire Date: {4}\nGender: {5}",
+                Id, Name, SecurityLevel, Salary, HireDate.ToString(), Gender);
         }
-#endregion
+        #endregion
     }
 
 }
