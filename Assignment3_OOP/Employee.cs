@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP03
+namespace Assignment3_OOP
 {
     internal class Employee
     {

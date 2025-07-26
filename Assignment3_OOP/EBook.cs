@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP03
+namespace Assignment3_OOP
 {
     public class EBook : Book
     {
