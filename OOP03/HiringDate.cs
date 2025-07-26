@@ -67,7 +67,10 @@ namespace OOP03
             return $"{Day:D2}/{Month:D2}/{Year}";
         }
 
-       
+        public DateTime ToDateTime()
+        {
+            return new DateTime(Year, Month, Day);
+        }
         #endregion
 
     }

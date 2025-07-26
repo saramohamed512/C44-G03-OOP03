@@ -19,17 +19,31 @@
             //Console.WriteLine(employee);
             #endregion
             #region problem3
-            //Employee[] employees= new Employee[3];
-            //employees[0] = new Employee(1, "Alice Smith", SecurityLevel.Developer, 75000.00m, new HiringDate(15, 6, 2015), 'F');
-            //employees[1] = new Employee(2, "Bob Johnson", SecurityLevel.Secretary, 90000.00m, new HiringDate(20, 3, 2018), 'M');
-            //employees[2] = new Employee(3, "Charlie Brown", SecurityLevel.Guest, 50000.00m, new HiringDate(10, 1, 2020), 'M');
+            Employee[] employees = new Employee[3];
+            employees[0] = new Employee(1, "Alice Smith", SecurityLevel.Developer, 75000.00m, new HiringDate(15, 6, 2015), 'F');
+            employees[1] = new Employee(2, "Bob Johnson", SecurityLevel.Secretary, 90000.00m, new HiringDate(20, 3, 2020), 'M');
+            employees[2] = new Employee(3, "Charlie Brown", SecurityLevel.Guest, 50000.00m, new HiringDate(10, 1, 2018), 'M');
             //Console.WriteLine("Employees List:");
             //Console.WriteLine("--------------------------------------------------");
             //foreach (var emp in employees)
             //{
             //    Console.WriteLine(emp);
+            //     Console.WriteLine("----------------------------");
             //}
 
+            #endregion
+            #region problem4
+            // Sort by hire date
+            //var sortedEmployees = employees.OrderBy(e => e.HireDate.ToDateTime()).ToArray();
+
+            //Console.WriteLine("Employees sorted by hire date:");
+            //Console.WriteLine("--------------------------------------------------");
+            //foreach (var emp in sortedEmployees)
+            //{
+            //    Console.WriteLine(emp);
+
+            //    Console.WriteLine("----------------------------");
+            //}
             #endregion
 
 
